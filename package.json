@@ -1,5 +1,5 @@
 {
-  "name": "play",
+  "name": "react-redux-boilerplate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +20,7 @@
     "eject": "react-scripts eject",
     "comp": "node ./internals/scripts/component.js $name",
     "cont": "node ./internals/scripts/container.js $name",
-    "clean": "node clean"
+    "clean": "node ./internals/scripts/clean.js"
 
   }
 }
