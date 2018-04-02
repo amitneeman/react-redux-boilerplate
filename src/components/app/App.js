@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 style={title}>React Redux boilerplate</h1>
+        <h1 style={styles.title}>React Redux boilerplate</h1>
       </div>
     );
   }
