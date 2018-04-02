@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import styles from './COMPONENT_NAME.styles';
+import styles from './Container.styles';
 
 
-class COMPONENT_NAME extends Component {
+class Container extends Component {
   
     render() {
         return (
             <div>
-                COMPONENT_NAME works!
+                Container works!
             </div>
         );
     }
@@ -20,4 +20,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps,{  })(COMPONENT_NAME);
+export default connect(mapStateToProps,{  })(Container);
