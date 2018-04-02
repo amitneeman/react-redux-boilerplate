@@ -21,6 +21,5 @@
     "comp": "node ./internals/scripts/component.js $name",
     "cont": "node ./internals/scripts/container.js $name",
     "clean": "node ./internals/scripts/clean.js"
-
   }
 }
