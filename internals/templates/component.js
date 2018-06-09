@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
-import styles from './COMPONENT_NAME.styles';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  color: ${props => props.color ? props.color : 'black'};
+  &:hover {
+    color: black;
+  }
+`;
 
 class COMPONENT_NAME extends Component {
   render() {
     return (
-      <div>
-          COMPONENT_NAME works!
-      </div>
+      <Container>
+        Hello
+      </Container>
     );
   }
 }
