@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-import styles from './App.styles.js';
+import styled from 'styled-components';
 
-import Container from '../../containers/container/Container';
+const Container = styled.div`
+  color: ${props => props.color ? props.color : 'black'};
+  &:hover {
+    color: black;
+  }
+`;
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      <Container />
-        <h1 style={styles.title}>React Redux boilerplate</h1>
-      </div>
+      <Container>
+        Hello
+      </Container>
     );
   }
 }
 
 export default App;
-

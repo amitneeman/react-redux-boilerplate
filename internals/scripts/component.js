@@ -19,12 +19,10 @@ if(output.stderr){
 
 // create the files
 var jsFileName = componentName + ".js";
-var cssFileName = componentName + ".styles.js";
 var testFileName = componentName + ".test.js";
 
 // copy template files
 shell.cp(templatesPath + 'component.js', componentDirectoryPath + jsFileName);
-shell.cp(templatesPath + 'component.styles.js', componentDirectoryPath + cssFileName);
 shell.cp(templatesPath + 'component.test.js', componentDirectoryPath + testFileName);
 
 // apply templating
