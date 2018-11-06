@@ -1,17 +1,22 @@
 var shell = require('shelljs');
 shell.config.silent = true;
+const isWindows = process.platform.toLowerCase().includes("win");
 
 var componentName = process.argv[2];
 componentName = componentName.charAt(0).toUpperCase() + componentName.slice(1);
 
 var componentDirectoryPath = './src/components/' + componentName.toLowerCase() + '/';
-var templatesPath = './internals/templates/'; 
+var templatesPath = './internals/templates/';
 var nameInTemplateFiles = 'COMPONENT_NAME';
+
+if (isWindows) {
+    componentDirectoryPath = 'src\\components\\' + componentName.toLowerCase() + '\\';
+}
 
 // create the directory
 var output = shell.exec('mkdir ' + componentDirectoryPath);
 
-if(output.stderr){
+if (output.stderr) {
     console.log("Failed creating the component with the following error:");
     console.log(output.stderr);
     return;

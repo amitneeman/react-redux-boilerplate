@@ -4,17 +4,17 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.4",
-    "redux": "^3.7.2",
-    "redux-devtools-extension": "^2.13.2",
-    "redux-promise": "^0.5.3",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-redux": "^5.1.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.1",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-promise": "^0.6.0",
     "redux-thunk": "^2.3.0",
-    "shelljs": "^0.8.1",
-    "styled-components": "^3.3.2"
+    "shelljs": "^0.8.2",
+    "styled-components": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,5 +24,11 @@
     "comp": "node ./internals/scripts/component.js $name",
     "cont": "node ./internals/scripts/container.js $name",
     "clean": "node ./internals/scripts/clean.js"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
