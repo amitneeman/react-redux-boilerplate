@@ -13,7 +13,8 @@
     "redux-devtools-extension": "^2.13.5",
     "redux-promise": "^0.6.0",
     "redux-thunk": "^2.3.0",
-    "shelljs": "^0.8.2"
+    "shelljs": "^0.8.2",
+    "styled-components": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,5 +24,11 @@
     "comp": "node ./internals/scripts/component.js $name",
     "cont": "node ./internals/scripts/container.js $name",
     "clean": "node ./internals/scripts/clean.js"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
